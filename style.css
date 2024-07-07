@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Rubik", sans-serif;
+            background-color:black;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        header{
+
+            display: flex;
+            background-color:black;
+            justify-content: space-between;
+            align-items: center;
+            position:fixed;
+            width: 100%;
+            height: 55px;
+            z-index: 99;
+        }
+        .logo{
+            margin-left: 15px;
+            color: white;
+            width: 10%;
+        }
+        header ul li {
+            list-style-type: none;
+        }
+        header ul a {
+            text-decoration: none;
+            color: white;
+            font-size:larger;
+            transition: .3s;
+            font-weight: 500;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        header ul a:hover{
+            color: red;
+            cursor: pointer;
+        }
+        header ul{
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 40%;
+        }
+        .icon{
+            display: none;
+        }
+        .icon i {
+            font-size: x-large;
+            color: white;
+        }
+        .home{
+            display: flex;
+            height: 100vh;
+            display: flex;
+            width: 100%;
+            position: relative;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .textbox{
+            width: 40%;
+            color: white;
+        }
+        .textbox span{
+            color: red;
+        }
+        .textbox h2{
+            font-size: 50px; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .textbox h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 70px;
+        }
+        .textbox a{
+            background-color: red;
+            color: white;
+            border-radius: 10px;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            transition: .3s ease;
+        }
+        .textbox a:hover{
+            cursor: pointer;
+            background-color: rgb(146, 1, 1);
+        }
+        .textbox p{
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 38px;
+        }
+        .pic{
+            border-radius: 50%;
+            height: 50%;
+            width: 25%;
+            background-image: url("./imgs/barath.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        
+        /* About page code */
+        .about{
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        .abt-img{
+            height: 70%;
+            width: 30%;
+            background-image: url("./imgs/about-img.webp");
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        .abt-txt{
+            width: 40%;
+            color: white;
+            height: 70%;
+            font-size: 1.3em;
+        }
+        .abt-txt h1{
+            color: white;
+            font-size: 3em;
+        }
+        .abt-txt li{
+            list-style: none;
+            font-size: 1.4em;
+            margin: 20px 0px;
+        }
+        .abt-txt li span{
+            color: red;
+        }
+
+        /* project page code */
+
+        .projects{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: relative;
+        }
+        .project-card{
+            height: 45%;
+            width: 40%;
+            background-color: white;
+            display: flex;
+            border-radius: 20px;
+            transition: .3s ease;
+        }
+        .project-card:hover{
+            box-shadow: 0 0 15px red;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .project-card-img{
+            width: 60%;
+            background-color: black;
+            height: 100%;
+        }
+        .project-card-txt{
+            width: 40%;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .project-card-txt h3{
+            margin: 20px 0;
+        }
+        .project-card-txt li{
+            margin: 10px 0;
+            list-style-type: none;
+            font-weight:500;
+        }
+        .project-card-txt a{
+            text-decoration: none;
+            color: white;
+            width: max-content;
+            padding: 10px 20px;
+            border-radius: 15px;
+            background-color: red;
+            font-weight: 400;
+        }
+        .project-card-img.img2{
+            background-image: url("./imgs/E-Commerce..jpeg");
+            background-size: cover;
+            border-radius: 20px 0 0 20px;
+            background-position: center;
+        }
+        .project-card-img.img1{
+            background-image: url("./imgs/rock-paper.jpeg");
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px 0 0 20px;
+        }
+
+        /* skills page code */
+
+        .skills{
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+        }
+        .skill-set{
+            height: 80%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 15px;
+        }
+        .skill-abt{
+            color: white;
+            width: 90%;
+        }
+        .skill-box{
+            height: 60px;
+            width: 90%;
+            color: white;
+            font-size: 1em;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 0 5px gray;
+        }
+        .skill-box div:nth-child(1){
+            display: flex;
+            align-items: center;
+            width: 85%;
+            border-width: 100%;
+            border-bottom: 3px solid red;
+        }
+        .skill-box div:nth-child(2){
+            width: 15%;
+        }
+        .skill-box h2{
+            font-size: 2em;
+        }
+        .skill-box i {
+            font-size: 3.5em;
+            color: white;
+        }
+        .skill-img{
+            background-image: url("./imgs/skill.jpg");
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+            height: 80%;
+            width: 30%;
+            background-color: antiquewhite;
+        }
+
+        /* contact page code */
+        
+        .contact{
+            margin-top: 50px;
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+            color: white;
+        }
+        .contact-heading{
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 45px;
+        }
+        .contact .content{
+            width: 50%;
+            text-align: left;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .content div{
+            width: 70%;
+        }
+        .content h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            margin: 10px;
+        }
+        .content h3{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            color: gray;
+        }
+        .content span{
+            font-size: 25px;
+            margin: 0 10px;
+        }
+        .content i{
+            margin: 10px;
+        }
+        .contact aside{
+            width: 50%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .contact aside h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            margin: 10px;
+        }
+        
+        .contact aside input{
+            width: 50%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            height: 50px;
+            border-radius: 5px;
+            background-color: gainsboro;
+            border: none;
+        }
+        .contact aside textarea{
+            height: 150px;
+            width: 50%;
+            background-color: gainsboro;
+            border-radius: 5px;
+        }
+        .contact aside button{
+            padding: 8px 20px;
+            font-weight: 600;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            background-color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+        .contact aside button:hover{
+            background-color: rgb(116, 0, 0);
+        }
+        .content i {
+            color: white;
+            transition: .3s ease;
+        }
+        .content i:hover{
+            color: red;
+            cursor: pointer;
+        }
+        footer{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: red;
+            padding: 20px;
+        }
+        footer span{
+            display: flex;
+            gap: 20px;
+            font-size: 1.5em;
+        }
+
+        @media screen and (max-width:600px){
+            header ul{
+                position: absolute;
+                top: 45px;
+                right: 0;
+                left: 0;
+                flex-direction: column;
+                gap: 0;
+                background-color: rgb(34, 33, 33);
+                margin-right: 0;
+                text-align: center;
+                overflow: hidden;
+                z-index: 3;
+                transition: .3s ease;
+                width: 100%;
+            }
+            .logo{
+                padding-left: 10px;
+                margin-left: 0px;
+            }
+            .icon{
+                padding: 0px 10px 0px 0px;
+                display: block;
+            }
+            header li{
+                padding: 10px;
+            }
+            .home{
+                margin: 0;
+                justify-content: center;
+                flex-wrap: wrap;
+                flex-direction: column;
+                position: relative;
+            }
+            .pic{
+                border-radius: 50%;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                height: 250px;
+                width: 60%;
+                background-position: center;
+                background-size: cover;
+        } 
+        .textbox{
+            margin-top:20px;
+            width: 95%;
+            color: white;
+            margin-left:0px;
+            margin-right: 0;
+        }
+        .textbox h2{
+            font-size: 20px; 
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .textbox h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        .textbox p{
+            text-align: center;
+            margin-right: 0px;
+        }
+        .textbox a{
+            margin-left: 35%;
+            color: white;
+            border-radius: 10px;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            border: none;
+            transition: .3s ease;
+        }
+
+         /* About page code */
+         .about{
+            height: 135vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .abt-img{
+            height: 30%;
+            width: 90%;
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+        }
+        .abt-txt{
+            width: 90%;
+            color: white;
+            height: 70%;
+            font-size: 1.3em;
+        }
+        .abt-txt h1{
+            text-align: center;
+            color: white;
+            font-size: 3em;
+        }
+        .abt-txt li{
+            list-style: none;
+            font-size: 1.4em;
+            margin: 20px 0px;
+        }
+        .abt-txt li span{
+            color: red;
+        }
+
+        /* project page code */
+
+        .projects{
+            height: 70vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .project-card{
+            height: 45%;
+            width: 95%;
+            background-color: white;
+            display: flex;
+            border-radius: 20px;
+            transition: .3s ease;
+        }
+        
+        /* skills page code */
+
+        .skills{
+            height: 100vh;
+            width: 100%;
+            flex-direction: column-reverse;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap:0px;
+            margin: 30px 0px;
+        }
+        .skill-set{
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 15px;
+        }
+        .skill-abt{
+            color: white;
+            width: 90%;
+        }
+        .skill-box{
+            height: 60px;
+            width: 90%;
+            align-items: center;
+            color: white;
+            font-size: 1em;
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
+            flex-wrap: wrap;
+            box-shadow: 0 0 5px gray;
+        }
+        .skill-img{
+            background-image: url("./imgs/skill.jpg");
+            background-position: center;
+            background-size: cover;
+            border-radius: 15px;
+            height:40%;
+            width: 95%;
+            background-color: antiquewhite;
+        }
+        .skill-box h2{
+            font-size: 1.6em;
+        }
+
+        /* contact page code */
+        
+        .contact{
+            height: 100vh;
+            width: 100%;
+            margin-top: 0;
+            display: flex;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-bottom: 0px;
+            color: white;
+            justify-content:space-evenly;
+        }
+        .contact-heading{
+            width: 95%;
+            font-size: 25px;
+            margin: 0;
+        }
+        .contact .content{
+            width: 95%;
+            gap: 0px;
+            margin: 0;
+            text-align: left;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .content h1{
+            margin-left: 0;
+        }
+        .contact aside{
+            width: 100%;
+            height: fit-content;
+        }
+        .contact aside h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            margin: 10px;
+        }
+        
+        .contact aside input{
+            width: 80%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            height: 40px;
+            border-radius: 5px;
+            background-color: gainsboro;
+            border: none;
+        }
+        .contact aside textarea{
+            height: 150px;
+            width: 80%;
+            background-color: gainsboro;
+            border-radius: 5px;
+        }
+        .contact aside button{
+            padding: 8px 20px;
+            font-weight: 600;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            background-color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: .3s ease;
+        }
+    }
