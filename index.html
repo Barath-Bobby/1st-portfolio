@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Barath</h1>
+        </div>
+        <ul id="menubar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="icon">
+            <i class="fa-solid fa-bars" onclick="menu()"></i>
+        </div>
+    </header>
+    <div id="home" class="home">
+ 
+        <div class="pic"></div>
+   
+        <div class="textbox">
+            <h2>Hi I'M <span>BARATH</span> ,</h2>
+            <h1> <span>W</span>EB <span> DEVELOPER </span></h1>
+            <p>web designer and web developer from chennai.
+             I create dynamic and attractive pages to get
+              user interactons online</p><br><br>
+            <a href="">HIRE ME</a>
+        </div>
+
+    </div>
+
+    <div class="about" id="about">
+        <div class="abt-img">
+
+        </div>
+        <div class="abt-txt">   
+            <h1>ABOUT ME</h1>
+            <ul>
+                <li><span>FRONT END DEVELOPER</span></li>
+                <P>As a passionate web developer, I specialize in creating dynamic and responsive websites with a strong focus on user experience and performance. With a robust foundation in HTML, CSS, and JavaScript, currently pursuing in modern frameworks like React and Angular, I bring innovative designs to life. My backend skills are in basic level with Python and mysql , ensuring seamless integration and functionality. I am committed to continuous learning and staying updated with industry trends to deliver cutting-edge solutions. My goal is to craft engaging digital experiences that drive success and meet client needs. Let's build something great together!</P>
+                <li><span>Education Qualification</span></li>
+                <p>2021-2024<br>Bcom (Computer Application) In Asan Memorial College</p><br>
+                <p>Extra course:<br> Full Stack Development </p>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Projects page code -->
+    <div class="projects" id="projects">
+        <div class="project-card">
+            <div class="project-card-img img1"></div>
+            <div class="project-card-txt">
+                <h3>To show of my JS skill level</h3>
+                    <ul>
+                        <li>Used a Math Key functions</li>
+                        <li>Theme Can Be Changed via JS</li>
+                        <li>Used Little css</li>
+                    </ul>
+                <a href="#">View</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-card-img img2"></div>
+            <div class="project-card-txt">
+                <h3>To show of my CSS skill level</h3>
+                    <ul>
+                        <li>Used CSS Flex-Box</li>
+                        <li>Review will be posted Via JS</li>
+                        <li>Used Little JS</li>
+                    </ul>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </div>
+
+        <!-- skills page content -->
+
+        <div class="skills" id="skills">
+            <div class="skill-set">
+                <div class="skill-abt">
+                    <h1>Skills</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat provident, maxime ullam aliquid repellendus saepe assumenda nulla aut commodi quisquam?</p>
+                </div>
+                <div class="skill-box">
+                    <div><i class="fa-brands fa-html5"></i><h1>HTML</h1></div>
+                    <div><h2>80%</h2></div>
+                    <div></div>
+                </div>
+
+                <div class="skill-box">
+                    <div><i class="fa-brands fa-css3-alt"></i><h1>CSS</h1></div>
+                    <div><h2>80%</h2></div>
+                    
+                </div>
+
+                <div class="skill-box">
+                    <div><i class="fa-brands fa-js"></i> <h1> JavaScript</h1></div>
+                    <div><h2>80%</h2></div>
+                </div>
+
+            </div>
+            <div class="skill-img"></div>
+        </div>
+
+
+        <!-- contact page content -->
+
+        <div class="contact" id="contact">
+            <div class="contact-heading"><h1>CONTACT US</h1></div>
+            <div class="content">
+                <div>
+                    <h1>LOCATION</h1>
+                <h3>28 Chicago California Dubai<br>
+                    ch-100
+                </h3>
+                </div>
+                <div>
+                    <h1>Follow Us</h1>
+                    <span><i class="fa-brands fa-facebook"></i> 
+                     <i class="fa-brands fa-instagram"></i> 
+                     <i class="fa-brands fa-google"></i> 
+                     <i class="fa-brands fa-twitter"></i>
+                    </span>
+                    <h3>@2018 Privacy Policy</h3>
+                </div>
+            </div>
+    
+            <aside>
+                <h1>CONTACT FORM</h1>
+                <input type="text" placeholder="  Enter Your Name">
+                <input type="text" placeholder="  Enter Your Valid @gmail id">
+                <textarea name="" id=""></textarea>
+                <button onclick="contact()">Submit</button>
+            </aside>
+        </div>
+    
+        <footer>
+            <h1>BARATH</h1>
+            <span><i class="fa-brands fa-facebook"></i> 
+                <i class="fa-brands fa-instagram"></i> 
+                <i class="fa-brands fa-google"></i> 
+                <i class="fa-brands fa-twitter"></i>
+               </span>
+               <p>© Bedimcode. All rigths reserved</p>
+        </footer>
+
+    <script>
+        let menulist = document.getElementById("menubar")
+        menulist.style.maxHeight = "0px";
+
+        function menu(){
+            if(menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
